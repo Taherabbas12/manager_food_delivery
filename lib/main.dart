@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         textDirection: TextDirection.rtl,
         routes: {
-          // '/': (p0) => SignIn(),
-          // 'Dashbord': (p0) => Dashbord(),
-          '/': (p0) => Dashbord(),
+          '/': (p0) => SignIn(),
+          'Dashbord': (p0) => Dashbord(),
+          // '/': (p0) => Dashbord(),
           'AddFood': (p0) => AddFood(),
           'Requests': (p0) => Requests(),
           'Delivery': (p0) => Delivery(),
