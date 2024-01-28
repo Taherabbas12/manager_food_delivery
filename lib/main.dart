@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'view/add_food.dart';
+import 'view/all_food.dart';
 import 'view/dashbord.dart';
+import 'view/delivery.dart';
+import 'view/requests.dart';
 import 'view/sign_in.dart';
 
 void main() {
@@ -18,8 +22,13 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         textDirection: TextDirection.rtl,
         routes: {
-          '/': (p0) => SignIn(),
-          'Dashbord': (p0) => Dashbord(),
+          // '/': (p0) => SignIn(),
+          // 'Dashbord': (p0) => Dashbord(),
+          '/': (p0) => Dashbord(),
+          'AddFood': (p0) => AddFood(),
+          'Requests': (p0) => Requests(),
+          'Delivery': (p0) => Delivery(),
+          'AllFood': (p0) => AllFood(),
         });
   }
 }

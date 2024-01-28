@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:manager_food_delivery/colors_app.dart';
 
 class Dashbord extends StatelessWidget {
   Dashbord({super.key});
 
   List<ViewDashbord> views = [
-    ViewDashbord('اضافة اكلات', 'addFood'),
-    ViewDashbord('الطلبات', 'requests'),
-    ViewDashbord('تم توصيلها', 'addFood'),
-    ViewDashbord('جميع الاكلات', 'addFood'),
+    ViewDashbord('اضافة اكلات', 'AddFood'),
+    ViewDashbord('الطلبات', 'Requests'),
+    ViewDashbord('تم توصيلها', 'Delivery'),
+    ViewDashbord('جميع الاكلات', 'AllFood'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,9 @@ class Dashbord extends StatelessWidget {
               InkWell(
                 borderRadius: BorderRadius.circular(15),
                 hoverColor: Colors.black,
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(i.value);
+                },
                 child: Container(
                   alignment: Alignment.center,
                   width: 200,

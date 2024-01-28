@@ -86,23 +86,23 @@ class SignIn extends StatelessWidget {
       ),
     );
   }
+}
 
-  Widget textInput(String label, TextEditingController controller,
-      {bool password = false}) {
-    return Container(
-      alignment: Alignment.center,
-      padding: const EdgeInsets.symmetric(horizontal: 15),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          color: myColor2,
-          border: Border.all(color: Colors.black.withOpacity(0.2))),
-      width: 400,
-      height: 60,
-      child: TextField(
-        obscureText: password,
-        controller: controller,
-        decoration: InputDecoration(hintText: label, border: InputBorder.none),
-      ),
-    );
-  }
+Widget textInput(String label, TextEditingController controller,
+    {bool password = false}) {
+  return Container(
+    alignment: Alignment.center,
+    padding: const EdgeInsets.symmetric(horizontal: 15),
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        color: myColor2,
+        border: Border.all(color: Colors.black.withOpacity(0.2))),
+    width: 400,
+    height: 60,
+    child: TextField(
+      obscureText: password,
+      controller: controller,
+      decoration: InputDecoration(hintText: label, border: InputBorder.none),
+    ),
+  );
 }
