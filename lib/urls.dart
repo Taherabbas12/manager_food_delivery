@@ -10,5 +10,5 @@ class URLS {
   static const foodAdd = '${URL}food/add.php';
   static const foodAddImages = '${URL}food/add_imges.php';
   // http://192.168.43.82/api_food_delivery/food/view.php
-  static const foodView = '${URL}food/view.php';
+  static const foodView = '${URL}food/view_food.php';
 }

@@ -266,7 +266,9 @@ class _AddFoodState extends State<AddFood> {
                                           print(response.data);
                                           Map data = jsonDecode(response.data);
                                           if (data['status'] != 'fail') {
+                                            Navigator.pop(context);
                                             print(data);
+                                            setState(() {});
                                             ScaffoldMessenger.of(context)
                                                 .showSnackBar(SnackBar(
                                               backgroundColor: Colors.green,
@@ -325,7 +327,8 @@ class _AddFoodState extends State<AddFood> {
                         hoverColor: const Color.fromARGB(255, 0, 0, 0),
                         onTap: () {
                           setState(() {
-                            category = values[index]['name'];
+                            category = values[index]['id'];
+
                             indexCategory = index;
                           });
                         },
@@ -381,7 +384,7 @@ class _AddFoodState extends State<AddFood> {
 
   void _uploadFiles() async {
     Dio dio = Dio();
-
+    print(category);
     Response response = await dio.post(URLS.foodAdd,
         data: FormData.fromMap({
           'Name': nameFood.text.trim(),

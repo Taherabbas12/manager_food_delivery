@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'view/add_food.dart';
-import 'view/all_food.dart';
+import 'view/all_category.dart';
 import 'view/dashbord.dart';
 import 'view/delivery.dart';
 import 'view/requests.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           'AddFood': (p0) => AddFood(),
           'Requests': (p0) => Requests(),
           'Delivery': (p0) => Delivery(),
-          'AllFood': (p0) => AllFood(),
+          'AllFood': (p0) => AllCategory(),
         });
   }
 }
