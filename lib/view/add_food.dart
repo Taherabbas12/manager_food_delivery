@@ -390,68 +390,7 @@ class _AddFoodState extends State<AddFood> {
           'Category': category,
           'isAvailable': 'true'
         }));
-    // fromData.fields
-    //     .add(MapEntry('name', nameFood.text.trim())); // إضافة النص الإضافي
-    // fromData.fields.add(
-    //     MapEntry('Description', description.text.trim())); // إضافة النص الإضافي
-    // fromData.fields
-    //     .add(MapEntry('Price', price.text.trim())); // إضافة النص الإضافي
-    // fromData.fields.add(MapEntry('Category', category)); // إضافة النص الإضافي
-    // fromData.fields
-    //     .add(const MapEntry('isAvailable', 'true')); // إضافة النص الإ
-    // FormData formData = FormData();
 
-    // // أضف هنا معالجة للملفات للرفع
-
-    // Dio dio = Dio();
-    // dio.interceptors.add(LogInterceptor());
-    // Response response = await dio.post(
-    //   URLS.categoryAdd,
-    //   data: formData,
-    //   onSendProgress: (sent, total) {
-    //     setState(() {
-    //       _progress = sent / total;
-    //     });
-    //   },
-    // );
-
-    // print(response.data);
-    // Map data = jsonDecode(response.data);
-
-    // FormData fromData = FormData();
-
-    // for (int i = 0; i < imagesFood.length; i++) {
-    //   String imagePath = imagesFood[i];
-    //   fromData.files.add(MapEntry(
-    //     'file$i',
-    //     await MultipartFile.fromFile(imagePath),
-    //   ));
-    // }
-
-    // //    TextEditingController nameFood = TextEditingController();
-    // // TextEditingController description = TextEditingController();
-    // // TextEditingController price = TextEditingController();
-
-    // fromData.fields
-    //     .add(MapEntry('id_items', nameFood.text.trim())); // إضافة النص الإضافي
-    // // fromData.fields.add(
-    // //     MapEntry('Description', description.text.trim())); // إضافة النص الإضافي
-    // // fromData.fields
-    // //     .add(MapEntry('Price', price.text.trim())); // إضافة النص الإضافي
-    // // fromData.fields.add(MapEntry('Category', category)); // إضافة النص الإضافي
-    // // fromData.fields
-    // //     .add(const MapEntry('isAvailable', 'true')); // إضافة النص الإضافي
-
-    // dio.interceptors.add(LogInterceptor());
-    // Response response2 = await dio.post(
-    //   URLS.foodAddImages,
-    //   data: fromData,
-    //   onSendProgress: (sent, total) {
-    //     double progressPercent = sent / total * 100;
-    //     print('Uploading: $progressPercent%');
-    //     // يمكنك استخدام هذا المكان لتحديث واجهة المستخدم مثل إظهار شريط التقدم
-    //   },
-    // );
     print(response.data);
 
     Map data = jsonDecode(response.data);
