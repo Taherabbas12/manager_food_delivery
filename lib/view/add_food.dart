@@ -318,7 +318,11 @@ class _AddFoodState extends State<AddFood> {
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   final data = jsonDecode(snapshot.data.toString());
-                  List values = data['data'];
+                  List values = [];
+                  if (data['status'] == 'success') {
+                    values = data['data'];
+                  }
+
                   return ListView.builder(
                     itemBuilder: (context, index) => Padding(
                       padding: const EdgeInsets.symmetric(vertical: 2.0),

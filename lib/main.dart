@@ -7,6 +7,7 @@ import 'view/dashbord.dart';
 import 'view/delivery.dart';
 import 'view/requests.dart';
 import 'view/sign_in.dart';
+import 'view/start_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         textDirection: TextDirection.rtl,
         routes: {
-          '/': (p0) => SignIn(),
+          '/': (p0) =>   StartApp(),
+          'SignIn': (p0) => SignIn(),
           'Dashbord': (p0) => Dashbord(),
           // '/': (p0) => Dashbord(),
           'AddFood': (p0) => AddFood(),
