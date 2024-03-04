@@ -11,4 +11,9 @@ class URLS {
   static const foodAddImages = '${URL}food/add_imges.php';
   // http://192.168.43.82/api_food_delivery/food/view.php
   static const foodView = '${URL}food/view_food.php';
+
+  // Basket
+  static const basketViewRequest = '${URL}Basket/view_request_all.php';
+  static const basketViewSend = '${URL}Basket/view_send.php';
+  static const basketEditSend = '${URL}Basket/edit_send.php';
 }

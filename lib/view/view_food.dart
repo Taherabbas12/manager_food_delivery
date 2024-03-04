@@ -42,6 +42,7 @@ class _ViewFoodState extends State<ViewFood> {
                                   data['data'][index]['isAvailable'] == '0'
                                       ? true
                                       : false;
+                              print(data['data'][index]['Images'][index]);
                               showDialog(
                                   context: context,
                                   builder: (context) => AlertDialog(
@@ -66,7 +67,7 @@ class _ViewFoodState extends State<ViewFood> {
                                                               ['Images']
                                                           .length,
                                                       (index) => Image.network(
-                                                            '${URLS.URL}${data['data'][index]['Images'][index]}',
+                                                            '${URLS.URL}${data['data'][0]['Images'][index]}',
                                                             fit: BoxFit.cover,
                                                           )),
                                                   options: CarouselOptions(
